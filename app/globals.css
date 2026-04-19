@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme('colors.bgMain');
+  color: theme('colors.textMain');
+}
+
+/* Custom Scrollbar biar elegan */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.bgMain'); 
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.borderMain'); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.textMuted'); 
+}
